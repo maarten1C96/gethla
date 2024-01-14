@@ -29,8 +29,8 @@ $ ./get_serials_macos.sh
     Running executable file 'gethla'
 
     Scanning for connected STLink
-    STLink V2   hla_serial \x18\x00\x23\x00\x02\x00\x00\x30\x41\x31\x57\x4E
-    STLink V2   hla_serial \x42\x00\x62\x00\x0E\x00\x00\x54\x32\x33\x57\x4E
+    STLink V2 adapter serial: \x18\x00\x23\x00\x02\x00\x00\x30\x41\x31\x57\x4E
+    STLink V2 adapter serial: \x42\x00\x62\x00\x0E\x00\x00\x54\x32\x33\x57\x4E
 ```
 
 Using
@@ -39,5 +39,5 @@ Using
 In the platformio.ini file, specify the serial settings via upload_flags as follows:
 
 ```
-    upload_flags = -c hla_serial \x18\x00\x23\x00\x02\x00\x00\x30\x41\x31\x57\x4E
+    upload_flags = -c adapter serial \x18\x00\x23\x00\x02\x00\x00\x30\x41\x31\x57\x4E
 ```
