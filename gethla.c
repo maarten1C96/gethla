@@ -5,7 +5,7 @@
 static void print_device(libusb_device *dev) {
 	struct libusb_device_descriptor desc;
 	libusb_device_handle *handle = NULL;
-	char string[256];
+	unsigned char string[256];
 	int ret;
 
 	ret = libusb_get_device_descriptor(dev, &desc);
