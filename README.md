@@ -22,11 +22,11 @@ $ chmod +x ./get_serials_macos.sh
 Then run the file:
 
 ```
-$ ./get_serials_macos.sh
+    $ ./get_serials_macos.sh
 
-Executable file 'gethla' generated
+    Executable file 'gethla' generated
 
-Running executable file 'gethla'
+    Running executable file 'gethla'
 
     Scanning for connected STLink
     STLink V2   hla_serial \x18\x00\x23\x00\x02\x00\x00\x30\x41\x31\x57\x4E
