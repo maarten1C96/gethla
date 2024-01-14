@@ -25,6 +25,9 @@ Then run the file:
 $ ./get_serials_macos.sh
 
 Executable file 'gethla' generated
+    $ ./get_serials_macos.sh
+
+    Executable file 'gethla' generated
 
     Running executable file 'gethla'
 
