@@ -36,7 +36,7 @@ $ ./get_serials_macos.sh
 Using
 =====
 
-In the platformio.ini file, specify the serial settings as follows:
+In the platformio.ini file, specify the serial settings via upload_flags as follows:
 
 ```
     upload_flags = -c hla_serial \x18\x00\x23\x00\x02\x00\x00\x30\x41\x31\x57\x4E
