@@ -2,7 +2,7 @@ gethla (macOS)
 ==============
 
 Based on gethla by a-v-s (André van Schoubroeck). Simple tool to get the ST-Link Serial String for use with OpenOCD or PlatformIO. When multiple ST-Links are connected,
-one must specify the serial number to connect. As the ST-Link V2 uses a serial number consisting of non-ascii characters, it is not straight forwards to capture the serial number using for example lsusb.
+one must specify the serial number to connect. As the ST-Link V2 uses a serial number consisting of non-ascii characters, it is not straightforward to capture the serial number using for example lsusb.
 
 ```
 $ lsusb -d 0483: -v | grep Serial
@@ -36,7 +36,7 @@ $ ./get_serials_macos.sh
 Using
 =====
 
-In the platformio.ini file, specify the serial settings via upload_flags as follows:
+In the *platformio.ini* file, specify the serial settings via upload_flags as follows:
 
 ```
     upload_flags = -c adapter serial \x18\x00\x23\x00\x02\x00\x00\x30\x41\x31\x57\x4E
