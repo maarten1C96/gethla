@@ -1,8 +1,7 @@
 gethla (macOS)
 ==============
 
-Based on gethla by a-v-s (André van Schoubroeck). Simple tool to get the ST-Link Serial String for use with OpenOCD or PlatformIO. When multiple ST-Links are connected,
-one must specify the serial number to connect. As the ST-Link V2 uses a serial number consisting of non-ascii characters, it is not straightforward to capture the serial number using for example lsusb.
+A macOS-specific version of the `gethla` utility, originally written by André van Schoubroeck (a-v-s). The `gethla` utility facilitates in acquiring the ST-Link serial string of each connected device, to be used in for example OpenOCD and PlatformIO. This tool is particularly useful for handling ST-Link non-ASCII serial numbers, which are not easily obtained through standard commands like `lsusb`.
 
 ```
 $ lsusb -d 0483: -v | grep Serial
@@ -10,8 +9,17 @@ $ lsusb -d 0483: -v | grep Serial
               Serial Number: B
 ```
 
-Running
-=======
+Prerequisites
+=============
+
+Ensure you have `lsusb` installed on your macOS, which might require installing additional packages or using Homebrew.
+
+```
+brew install lsusb
+```
+
+Steps to run
+============
 
 To run the script, first change *get_serials_macos.sh* permissions with the chmod command.
 
@@ -33,8 +41,8 @@ $ ./get_serials_macos.sh
     STLink V2 adapter serial: \x42\x00\x62\x00\x0E\x00\x00\x54\x32\x33\x57\x4E
 ```
 
-Using
-=====
+Usage within PlatformIO
+=======================
 
 In the *platformio.ini* file, specify the serial settings via upload_flags as follows:
 
