@@ -12,7 +12,7 @@ $ lsusb -d 0483: -v | grep Serial
 Prerequisites
 =============
 
-Ensure you have `lsusb` installed on your macOS, which might require installing additional packages or using Homebrew.
+Ensure you have `lsusb` installed on your macOS, for example via Homebrew.
 
 ```
 brew install lsusb
